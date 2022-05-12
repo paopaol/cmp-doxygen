@@ -2,6 +2,15 @@
 
 nvim-cmp source for doxygen keywords.
 
+# install
+
+```lua
+  use {
+    "paopaol/cmp-doxygen",
+    requires = "nvim-treesitter/nvim-treesitter",
+  }
+```
+
 # Setup
 
 ```lua
