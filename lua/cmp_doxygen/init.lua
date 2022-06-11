@@ -53,11 +53,6 @@ function source:is_available()
 end
 
 source.complete = function(self, params, callback)
-  if not is_in_comment_block('@comment.outer') then
-    return callback({})
-  end
-
-
   callback({
     { label = 'arg' },
     { label = 'author' },
