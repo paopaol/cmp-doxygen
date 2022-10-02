@@ -1,43 +1,16 @@
-# cmp-path
+# cmp-doxygen
 
-nvim-cmp source for doxygen keywords.
+cmp-doxygen is an [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) source for
+doxygen keywords. It triggers after typing `@`.
 
-# install
-
-```lua
-  use {
-    "paopaol/cmp-doxygen",
-    requires = "nvim-treesitter/nvim-treesitter",
-  }
-```
-
-# Setup
+## Installation
 
 ```lua
-require'cmp'.setup {
-  sources = {
-    { name = 'doxygen' }
-  }
-}
+use { "paopaol/cmp-doxygen", requires = "nvim-treesitter/nvim-treesitter" }
 ```
 
-## Configuration
-
-The below source configuration options are available. To set any of these options, do:
+## Setup
 
 ```lua
-cmp.setup({
-  sources = {
-    {
-      name = 'doxygen',
-      option = {
-        -- Options go into this table
-      },
-    },
-  },
-})
+require "cmp".setup { sources = { { name = "doxygen" } } }
 ```
-
-## Trigger On
-
-`@`
