@@ -6,7 +6,13 @@ doxygen keywords. It triggers after typing `@`.
 ## Installation
 
 ```lua
-use { "paopaol/cmp-doxygen", requires = "nvim-treesitter/nvim-treesitter" }
+  use {
+    "paopaol/cmp-doxygen",
+    requires = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-treesitter/nvim-treesitter-textobjects"
+    }
+  }
 ```
 
 ## Setup
