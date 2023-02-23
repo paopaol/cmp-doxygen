@@ -1,4 +1,4 @@
-# cmp-path
+# cmp-doxygen
 
 nvim-cmp source for doxygen keywords.
 
@@ -7,7 +7,10 @@ nvim-cmp source for doxygen keywords.
 ```lua
   use {
     "paopaol/cmp-doxygen",
-    requires = "nvim-treesitter/nvim-treesitter",
+    requires = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-treesitter/nvim-treesitter-textobjects"
+    }
   }
 ```
 
